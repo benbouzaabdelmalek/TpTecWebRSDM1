@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mon premiere formulaire</title>
+</head>
+<body>
+<h1> Votre Avis Nous Intéresse </h1>
+<Style>
+.container{
+Display: flex;
+}
+</style>
+<div class=container>
+<fieldset>
+<legend>Informations Personnelles</legend>
+<ol>
+<li>Nom <input type="text" name="Nom" maxlength="30"/><br/></li>
+<li>Date de naissance <input name="Date de naissance" type="date" required="" maxlength="30" /><br/></li>
+<li>Site <input type="text" name="salaire" id="salaire" placeholder="http://monsite.com" maxlength="50" /><br/></li>
+<li>Emploi <select name="Emploi" maxlength="15"><option value =""><br/>
+<option value ="Médecin">Médecin </option>
+<option value="Infirmier">Infirmier </option>
+<option value ="Administrateur">Administrateur </option>
+<option value ="Agent Vacataire">Agent Vacataire </option>
+<option value ="Enseignent">Enseignent </option>
+<option value ="Chercheur">Chercheur </option>
+</select> </li>
+<li>Aprox. salaire Annuel</br></li><input type="number" name="salaire" placeholder="DA" id="score" maxlength="25"/><br/>
+</fieldset>
+<fieldset>
+<legend>Information de Contact</legend>
+<ol>
+<li>Adresse Line 1</li><input type="address" name="Adresse Line 1" id="Adresse Line 1" value=""/><br/>
+<li>Adresse Line 2</li><input type="address" name="Adresse Line 2" id="Adresse Line 2" value=""/><br/>
+<tr>
+<li><td> Pays</td><td> <select name="distination" id="distination"><option value ="">
+</li>
+</option>
+<option value ="Algérie"> Algérie </option>
+<option value="Tunisie"> Tunisie </option>
+<option value ="Egypte"> Egypte </option>
+<option value ="Arabie Saoudie">Arabie Saoudie </option>
+<option value ="France">France</option>
+<option value ="USA">USA</option>
+<option value ="Turky">Turky</option>
+<option value ="Chine">Chine</option>
+<option value ="Japon">Japon</option>
+<option value ="Allemanie">Allemanie</option>
+<option value ="Engletaire">Engletaire</option>
+<option value ="Afrique de sud">Afrique de sud </option>
+<option value ="Australie">Australie</option>
+</select>
+</td>
+</tr><br>
+<li><td> Tel </td>
+<input type="number" name="Tel" id="Tel" placeholder="eg: +213 67..."/><br/>
+</li>
+<li>Courriel<input type="email" name="Courriel" id="Courriel" required="" maxlength="25"/><br/>
+</li>
+</fieldset>
+</div>
+<div class="Préférences">
+<h2>Préférences </h2>
+<p>Choisir une couleur <input type="color" required=""/> </p>
+Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5?
+<input type="range" required="" /><br>
+<input type="submit" value="Envoyer">
+</div>
+</body>
+</html>
